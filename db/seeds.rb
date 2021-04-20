@@ -1,9 +1,9 @@
 User.destroy_all
 Post.destroy_all
 Follow.destroy_all
-# User.reset_pk_sequence
-# Post.reset_pk_sequence
-# Follow.reset_pk_sequence
+# User.reset_pk_sequence!
+# Post.reset_pk_sequence!
+# Follow.reset_pk_sequence!
 
 jeff = User.create!(
     name: "Jeff",
@@ -75,6 +75,52 @@ post4 = Post.create!(
     profilesrc: "https://i1.sndcdn.com/artworks-000215207650-a9ejfn-t500x500.jpg",
     image:"https://images.wagwalkingweb.com/media/daily_wag/sense_guides/history/1541675703.89/can-dogs-drink-beer_history.jpg"
 )
+
+follow1 = Follow.create!(
+    follower_id:2,
+    followee_id:1
+)
+
+follow1 = Follow.create!(
+    follower_id:3,
+    followee_id:1
+)
+
+follow1 = Follow.create!(
+    follower_id:4,
+    followee_id:1
+)
+
+follow1 = Follow.create!(
+    follower_id:5,
+    followee_id:1
+)
+
+follow1 = Follow.create!(
+    follower_id:1,
+    followee_id:2
+)
+
+follow1 = Follow.create!(
+    follower_id:1,
+    followee_id:3
+)
+
+follow1 = Follow.create!(
+    follower_id:1,
+    followee_id:4
+)
+
+follow1 = Follow.create!(
+    follower_id:1,
+    followee_id:5
+)
+
+follow1 = Follow.create!(
+    follower_id:2,
+    followee_id:3
+)
+
 
 
 
