@@ -77,4 +77,5 @@ post4 = Post.create!(
 )
 
 
+
 puts "Seeded sucka"
