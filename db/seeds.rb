@@ -6,35 +6,35 @@ Follow.destroy_all
 # Follow.reset_pk_sequence!
 
 jeff = User.create!(
-    name: "Jeff",
+    name: "jeff",
     username: "jeff",
     email: "jeff@gmail.com",
     profileimage: "https://vetstreet.brightspotcdn.com/dims4/default/056f631/2147483647/thumbnail/645x380/quality/90/?url=https%3A%2F%2Fvetstreet-brightspot.s3.amazonaws.com%2Fca%2Fd4%2Fef042ab949e1b141663db3836971%2Flabradors-AP-0SA6F7-645sm8513.jpg"
 )
 
 amit = User.create!(
-    name: "Amit",
+    name: "amit",
     username: "amit",
     email: "amit@gmail.com",
     profileimage: "https://www.harlingenveterinaryclinic.com/sites/default/files/styles/large/public/golden-retriever-dog-breed-info.jpg?itok=cdghqKxv"
 )
 
 dan = User.create!(
-    name: "Dan",
+    name: "dan",
     username: "dan",
     email: "dan@gmail.com",
     profileimage:"https://i1.sndcdn.com/artworks-000215207650-a9ejfn-t500x500.jpg"
 )
 
 christine = User.create!(
-    name: "Christine",
+    name: "christine",
     username: "christine",
     email: "chris@gmail.com",
     profileimage: "https://www.rd.com/wp-content/uploads/2021/01/GettyImages-1257560163-scaled-e1610062322469.jpg"
 )
 
 sarah = User.create!(
-    name: "Sarah",
+    name: "sarah",
     username: "sarah",
     email: "sarah@gmail.com",
     profileimage: "https://thehappypuppysite.com/wp-content/uploads/2018/01/Toy-Poodle-HP-long.jpg"
