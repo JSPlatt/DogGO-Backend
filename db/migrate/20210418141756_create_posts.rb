@@ -3,9 +3,10 @@ class CreatePosts < ActiveRecord::Migration[6.1]
     create_table :posts do |t|
       t.belongs_to :user, null: false, foreign_key: true
       t.string :title
-      t.string :content
-      t.string :author
+      t.string :message
+      t.string :username
       t.string :profilesrc
+      t.string :image
 
       t.timestamps
     end
