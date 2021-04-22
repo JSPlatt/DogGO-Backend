@@ -28,6 +28,7 @@ class PostsController < ApplicationController
 
   # PATCH/PUT /posts/1
   def update
+    @post = Post.find(params[:id])
     if @post.update(post_params)
       render json: @post
     else
@@ -50,11 +51,11 @@ class PostsController < ApplicationController
 
 
 
-    def update
-      if @user.update(user_params)
-        render json: @user
-      else
-        render json: @user.errors, status: :unprocessable_entity
-      end
-    end
+    # def update
+    #   if @user.update(user_params)
+    #     render json: @user
+    #   else
+    #     render json: @user.errors, status: :unprocessable_entity
+    #   end
+    # end
 end
