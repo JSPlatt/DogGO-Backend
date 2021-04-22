@@ -15,8 +15,14 @@ class PostsController < ApplicationController
 
   # POST /posts
   def create
-    @post = Post.new(post_params)
-    render json: @post
+    @post = Post.create(post_params)
+    
+    if @post.save
+      render json: @post
+
+    else 
+      render json: {"msg": "not created"}
+    end 
  
   end
 
@@ -39,7 +45,7 @@ class PostsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def post_params
-      params.require(:post).permit( :title, :message, :username)
+      params.require(:post).permit( :title, :message, :username, :user_id)
     end
 
 
